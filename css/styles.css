@@ -1,0 +1,107 @@
+@import url(//db.onlinewebfonts.com/c/9527a4c4f55e8075eb6a60fe577d89c4?family=Px+Grotesk+Regular);
+@font-face {
+  font-family: 'Px Grotesk Regular';
+  src: url('//db.onlinewebfonts.com/t/9527a4c4f55e8075eb6a60fe577d89c4.eot');
+  src: url('//db.onlinewebfonts.com/t/9527a4c4f55e8075eb6a60fe577d89c4.eot?#iefix') format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/9527a4c4f55e8075eb6a60fe577d89c4.woff2') format('woff2'),
+    url('//db.onlinewebfonts.com/t/9527a4c4f55e8075eb6a60fe577d89c4.woff') format('woff'),
+    url('//db.onlinewebfonts.com/t/9527a4c4f55e8075eb6a60fe577d89c4.ttf') format('truetype'),
+    url('//db.onlinewebfonts.com/t/9527a4c4f55e8075eb6a60fe577d89c4.svg#Px Grotesk Regular') format('svg');
+}
+body {
+  /* Other purlple #6610f2 
+      Black: #111111;
+  */
+  font-family: 'Px Grotesk Regular';
+}
+
+/* Hide the arrows of the input number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.web-title {
+  background-color: #6f42c1;
+  border-bottom-right-radius: 32px;
+  border-bottom-left-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.web-title span {
+  margin-right: 5px;
+}
+
+/* **************************************** */
+
+.price-calc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-calc-container div p {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.prices-titles {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #000;
+}
+
+.prices-titles h2,
+h3 {
+  margin: 10px 0;
+}
+
+#price-calc {
+}
+
+ul {
+  width: 75%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+li span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.article-name {
+  text-align: center;
+  white-space: nowrap;
+  font-size: 1rem;
+  width: 166px;
+}
+
+.price-ves-container {
+  width: 25%;
+}
+.price-bolivares {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  font-weight: bold;
+}
