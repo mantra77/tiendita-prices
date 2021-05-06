@@ -3,6 +3,8 @@ const calcularPrecio = document.getElementById('calc-btn');
 const resetValues = document.getElementById('reset-btn');
 const priceVes = document.getElementById('price-ves-container');
 const listPriceVes = document.getElementById('price-ves');
+const spanPrice = document.getElementById('span-price');
+const textPrice = document.getElementById('text-price');
 // const preciosArray = [2.1, 1, 1.1, 1, 0.8, 0.5];
 
 const preciosDolares = {
@@ -72,15 +74,19 @@ const calcular2 = () => {
   for (var key in preciosDolares) {
     let parrafo = document.createElement('P');
     let precioOut = precioBolivares.value * preciosDolares[key];
-    parrafo.innerHTML = precioOut.toLocaleString();
+    parrafo.innerHTML = precioOut.toLocaleString() + ' Bs';
     listPriceVes.appendChild(parrafo);
     parrafo.classList.add('price-bolivares');
-    console.log(precioBolivares.value.toLocaleString() * preciosDolares[key]);
   }
+  spanPrice.innerHTML = precioBolivares.value;
+  textPrice.style.opacity = '1';
 };
 
 const reset = () => {
   listPriceVes.innerHTML = '';
+  spanPrice.innerHTML = '';
+  textPrice.style.opacity = '0';
+  precioBolivares.value = '';
 };
 
 calcularPrecio.onclick = calcular2;

@@ -8,6 +8,9 @@
     url('//db.onlinewebfonts.com/t/9527a4c4f55e8075eb6a60fe577d89c4.ttf') format('truetype'),
     url('//db.onlinewebfonts.com/t/9527a4c4f55e8075eb6a60fe577d89c4.svg#Px Grotesk Regular') format('svg');
 }
+html {
+  box-sizing: border-box;
+}
 body {
   /* Other purlple #6610f2 
       Black: #111111;
@@ -28,7 +31,7 @@ input[type='number'] {
 }
 
 .web-title {
-  background-color: #6f42c1;
+  background-color: #7323a2;
   border-bottom-right-radius: 32px;
   border-bottom-left-radius: 32px;
   display: flex;
@@ -47,19 +50,90 @@ input[type='number'] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  height: 340px;
+}
+.main-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#price-calc {
+  width: 90%;
+  height: 60px;
+  font-size: 2rem;
+  text-align: center;
+  border: 3px solid rgb(151, 151, 151);
+  border-radius: 16px;
+}
+
+#price-calc:focus {
+  border: 2px solid #7323a2;
+  background-color: rgb(165, 165, 165);
+}
+
+#price-calc::placeholder {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 .price-calc-container div p {
   font-size: 2.2rem;
   font-weight: bold;
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.main-input-bttns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 125px;
+}
+
+#calc-btn {
+  width: 180px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #7323a2;
+  border-radius: 16px;
+}
+
+#calc-btn:active {
+  background-color: rgb(168, 168, 168);
+  color: #000;
+  padding: 15px;
+}
+
+#reset-btn {
+  width: 90px;
+  height: 50px;
+  font-size: 1rem;
+  text-align: center;
+  border: 2px solid #000000;
+  border-radius: 16px;
+}
+#reset-btn:active {
+  background-color: rgb(168, 168, 168);
+  color: #000;
+  padding: 13px;
 }
 
 .prices-titles {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid #000;
+  color: #fff;
+  background-color: #7323a2;
+  border-top: 1px solid #7323a2;
+  border-bottom: 1px solid #7323a2;
 }
 
 .prices-titles h2,
@@ -67,14 +141,13 @@ h3 {
   margin: 10px 0;
 }
 
-#price-calc {
-}
-
 ul {
-  width: 75%;
+  width: 70%;
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: rgb(199, 199, 199);
+  border-right: 1px solid #7323a2;
 }
 
 li {
@@ -93,15 +166,16 @@ li span {
 .article-name {
   text-align: center;
   white-space: nowrap;
-  font-size: 1rem;
-  width: 166px;
+  font-size: 1.1rem;
+  width: 220px;
 }
 
-.price-ves-container {
-  width: 25%;
+#price-ves-container {
+  width: 30%;
 }
 .price-bolivares {
-  font-size: 1.2rem;
   margin: 20px 0;
+  text-align: center;
+  font-size: 1.2rem;
   font-weight: bold;
 }

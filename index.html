@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tiendita Price</title>
+    <link rel="shortcut icon" href="/imgs/Sin nombre.png" type="image/x-icon" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -19,22 +20,32 @@
     </header>
     <main>
       <section class="price-calc-container">
-        <div>
-          <p>Introducir Precio</p>
-        </div>
         <div class="main-input-container">
-          <input type="number" name="" id="price-calc" />
-          <div class="main-input-bttns">
-            <input type="button" value="Calcular" id="calc-btn" />
-            <input type="button" value="Resetear" id="reset-btn" />
-          </div>
+          <input type="number" name="tasa" id="price-calc" step="any" placeholder="Ingresar Tasa del dia $" />
+        </div>
+        <div style="height: 60px; cursor: default">
+          <p id="text-price" style="font-size: 1rem; opacity: 0; transition-property: opacity; transition-duration: 0.7s">
+            Precio calculados con la tasa: <span id="span-price"></span>
+          </p>
+        </div>
+        <div class="main-input-bttns">
+          <input type="button" value="Calcular" id="calc-btn" />
+          <input type="button" value="Resetear" id="reset-btn" />
         </div>
       </section>
       <section class="item-prices">
         <div class="prices-titles">
-          <h2>Precios:</h2>
-          <h3>Precio $</h3>
-          <h3>Precio Bs.S</h3>
+          <div style="font-size: 1.7rem; font-weight: bold">
+            <p style="margin: 15px 0">Articulos:</p>
+          </div>
+          <div style="display: flex; justify-content: space-between; width: 45%; margin-left: 80px">
+            <div style="font-size: 1.5rem; font-weight: bold">
+              <p style="margin: 15px 0">Precio $</p>
+            </div>
+            <div style="font-size: 1.5rem; font-weight: bold; margin-left: 15 px">
+              <p style="margin: 15px 0">Precio Bs</p>
+            </div>
+          </div>
         </div>
         <div class="main-prices-container">
           <div style="display: flex">
