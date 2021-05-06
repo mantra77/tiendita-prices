@@ -21,7 +21,15 @@
     <main>
       <section class="price-calc-container">
         <div class="main-input-container">
-          <input type="number" name="tasa" id="price-calc" step="any" placeholder="Ingresar Tasa del dia $" />
+          <input
+            type="number"
+            name="tasa"
+            id="price-calc"
+            step="any"
+            placeholder="Ingresar Tasa del dia $"
+            pattern="[0-9]*"
+            inputmode="numeric"
+          />
         </div>
         <div style="height: 60px; cursor: default">
           <p id="text-price" style="font-size: 1rem; opacity: 0; transition-property: opacity; transition-duration: 0.7s">
