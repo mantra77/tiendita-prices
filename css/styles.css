@@ -142,7 +142,7 @@ h3 {
 }
 
 ul {
-  width: 70%;
+  width: 60%;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -166,12 +166,12 @@ li span {
 .article-name {
   text-align: center;
   white-space: nowrap;
-  font-size: 1.1rem;
-  width: 220px;
+  font-size: 13px;
+  width: 160px;
 }
 
 #price-ves-container {
-  width: 30%;
+  width: 40%;
 }
 .price-bolivares {
   margin: 20px 0;
