@@ -5,7 +5,6 @@ const priceVes = document.getElementById('price-ves-container');
 const listPriceVes = document.getElementById('price-ves');
 const spanPrice = document.getElementById('span-price');
 const textPrice = document.getElementById('text-price');
-// const preciosArray = [2.1, 1, 1.1, 1, 0.8, 0.5];
 
 const preciosDolares = {
   Aceite_Soya: 2.1,
@@ -61,19 +60,10 @@ const preciosDolares = {
   Yesquero: 0.5,
 };
 
-// const calcular = () => {
-//   for (let i = 0; i < preciosArray.length; i++) {
-//     let parrafo = document.createElement('P');
-//     let precioOut = precioBolivares.value * preciosArray[i];
-//     parrafo.innerHTML = precioOut.toLocaleString();
-//     listPriceVes.appendChild(parrafo);
-//     parrafo.classList.add('price-bolivares');
-//   }
-// };
 const calcular2 = () => {
   for (var key in preciosDolares) {
     let parrafo = document.createElement('P');
-    let precioOut = precioBolivares.value * preciosDolares[key];
+    let precioOut = parseFloat(precioBolivares.value) * 1000000 * preciosDolares[key];
     parrafo.innerHTML = precioOut.toLocaleString() + ' Bs';
     listPriceVes.appendChild(parrafo);
     parrafo.classList.add('price-bolivares');
@@ -91,3 +81,58 @@ const reset = () => {
 
 calcularPrecio.onclick = calcular2;
 resetValues.onclick = reset;
+
+// Jquery Dependency
+
+$("input[data-type='currency']").on({
+  keyup: function () {
+    formatCurrency($(this));
+  },
+  blur: function () {
+    formatCurrency($(this), 'blur');
+  },
+});
+function formatNumber(n) {
+  // format number 1000000 to 1,234,567
+  return n.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+}
+
+function formatCurrency(input, blur) {
+  // appends $ to value, validates decimal side
+  // and puts cursor back in right position.
+
+  // get input value
+  let input_val = input.val();
+  // don't validate empty input
+  if (input_val === '') {
+    return;
+  }
+
+  // check for decimal
+  if (input_val.indexOf(',') >= 0) {
+    // get position of first decimal
+    // this prevents multiple decimals from
+    // being entered
+    let decimal_pos = input_val.indexOf(',');
+
+    // add commas to left side of number
+    left_side = formatNumber(left_side);
+
+    // validate right side
+    right_side = formatNumber(right_side);
+
+    // join number by .
+  } else {
+    // no decimal entered
+    // add commas to number
+    // remove all non-digits
+    input_val = formatNumber(input_val);
+
+    // final formatting
+    if (blur === 'blur') {
+      input_val += '';
+    }
+  }
+  // send updated string to input
+  input.val(input_val);
+}
