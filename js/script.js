@@ -3,6 +3,7 @@ const calcularPrecio = document.getElementById('calc-btn');
 const resetValues = document.getElementById('reset-btn');
 const priceVes = document.getElementById('price-ves-container');
 const listPriceVes = document.getElementById('price-ves');
+const spanPriceContainer = document.getElementById('span-price-container');
 const spanPrice = document.getElementById('span-price');
 const textPrice = document.getElementById('text-price');
 
@@ -68,7 +69,8 @@ const calcular2 = () => {
     listPriceVes.appendChild(parrafo);
     parrafo.classList.add('price-bolivares');
   }
-  spanPrice.innerHTML = precioBolivares.value;
+  spanPriceContainer.style.visibility = 'visible';
+  spanPrice.innerHTML = precioBolivares.value + ' Bs';
   textPrice.style.opacity = '1';
 };
 
@@ -77,6 +79,7 @@ const reset = () => {
   spanPrice.innerHTML = '';
   textPrice.style.opacity = '0';
   precioBolivares.value = '';
+  spanPriceContainer.style.visibility = 'hidden';
 };
 
 calcularPrecio.onclick = calcular2;
