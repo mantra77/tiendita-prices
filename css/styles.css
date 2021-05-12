@@ -197,3 +197,12 @@ li span {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+footer {
+  border-top: 1px solid #7323a2;
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-weight: bold;
+}

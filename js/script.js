@@ -7,13 +7,21 @@ const spanPriceContainer = document.getElementById('span-price-container');
 const spanPrice = document.getElementById('span-price');
 const textPrice = document.getElementById('text-price');
 
+// Cafe Madrid 250g 1.5$
+// Arroz Royal 1$
+// Queso 2.7$
+// Azucar Montalban 0.8$
+// todo Especificar nombres de las Azucares Montalban y la otra brasilena en diferentes precios.
 const preciosDolares = {
   Aceite_Soya: 2.1,
   Arroz_Emi: 1,
   Arroz_Palacio: 1.1,
+  Arroz_Royal: 1,
   Atun: 1,
-  Azucar: 0.8,
+  Azucar_Uniao: 0.8,
+  Azucar_Montalban: 0.8,
   Bombillos: 0.5,
+  Cafe_madrid_250: 1.5,
   Cafe_Madrid_500: 2.7,
   Carton_de_Huevos: 3.5,
   Chimo: 0.4,
@@ -45,6 +53,7 @@ const preciosDolares = {
   Pega_loca: 0.5,
   Pilas_CU: 0.4,
   Pilas_paquete: 0.9,
+  Queso_Kg: 2.7,
   Sal: 0.3,
   Salchichas: 1.7,
   Salsa_de_ajo: 0.9,
@@ -61,7 +70,7 @@ const preciosDolares = {
   Yesquero: 0.5,
 };
 
-const calcular2 = () => {
+const calcular = () => {
   for (var key in preciosDolares) {
     let parrafo = document.createElement('P');
     let precioOut = parseFloat(precioBolivares.value) * 1000000 * preciosDolares[key];
@@ -82,7 +91,7 @@ const reset = () => {
   spanPriceContainer.style.visibility = 'hidden';
 };
 
-calcularPrecio.onclick = calcular2;
+calcularPrecio.onclick = calcular;
 resetValues.onclick = reset;
 
 // Jquery Dependency
