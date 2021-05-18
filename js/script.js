@@ -6,12 +6,12 @@ const listPriceVes = document.getElementById('price-ves');
 const spanPriceContainer = document.getElementById('span-price-container');
 const spanPrice = document.getElementById('span-price');
 const textPrice = document.getElementById('text-price');
+const menuSection = document.getElementById('menu-section');
 
-// Cafe Madrid 250g 1.5$
-// Arroz Royal 1$
-// Queso 2.7$
-// Azucar Montalban 0.8$
-// todo Especificar nombres de las Azucares Montalban y la otra brasilena en diferentes precios.
+// Menu Buttons:
+const openMenuBtn = document.getElementById('open-menu-btn');
+const closeMenuBtn = document.getElementById('close-menu-btn');
+
 const preciosDolares = {
   Aceite_Soya: 2.1,
   Arroz_Emi: 1,
@@ -91,8 +91,20 @@ const reset = () => {
   spanPriceContainer.style.visibility = 'hidden';
 };
 
+const openMenu = () => {
+  menuSection.style.left = '45vw';
+};
+const closeMenu = () => {
+  menuSection.style.left = '100vw';
+};
+
+//Calculation click functions
 calcularPrecio.onclick = calcular;
 resetValues.onclick = reset;
+
+//Menu buttons functions
+openMenuBtn.onclick = openMenu;
+closeMenuBtn.onclick = closeMenu;
 
 // Jquery Dependency
 

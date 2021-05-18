@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Learning JavaScript</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div>
+          <h1>Price Calculator</h1>
+          <h3>Tool to calculate the price of the products</h3>
+        </div>
+      </section>
+      <section>
+        <div>
+          <input type="text" data-type="currency" name="Price" id="price" placeholder="Precio total Bs" />
+          /
+          <input type="number" name="Quantity of the product" id="quantity" placeholder="Cantidad de prodcutos" />
+        </div>
+        <div>
+          <input type="number" name="Percentage" id="percentage" placeholder="Porcentaje a Ganar %" />
+          %
+        </div>
+        <div>
+          <input type="text" data-type="currency" name="Exchange rate" id="exchange" placeholder="Tasa del dia $" />
+          $
+        </div>
+        <div>
+          <input type="submit" value="Calcular" id="calc" />
+          <input type="l" />
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>Precio en $:</p>
+        </div>
+        <div id="result"></div>
+      </section>
+    </main>
+    <script src="js/calc2.js"></script>
+  </body>
+</html>

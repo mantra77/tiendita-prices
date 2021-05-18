@@ -34,14 +34,71 @@ input[type='number'] {
   background-color: #7323a2;
   border-bottom-right-radius: 32px;
   border-bottom-left-radius: 32px;
+  width: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   color: #fff;
 }
 
 .web-title span {
-  margin-right: 5px;
+  font-size: 2.5rem;
+}
+
+.web-title h1 {
+  margin-left: 2%;
+  margin-right: 5%;
+  white-space: nowrap;
+}
+
+.menu {
+  width: 55vw;
+  height: 70vh;
+  background-color: #7323a2;
+  position: absolute;
+  top: 0%;
+  left: 100vw;
+  transition-property: left;
+  transition-duration: 0.5s;
+}
+
+.ul-list-options {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.ul-list-options li {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.menu-option {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255);
+}
+
+.menu-btns {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
 /* **************************************** */
@@ -94,6 +151,25 @@ input[type='number'] {
 }
 
 #price-calc::placeholder {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+input {
+  width: 90%;
+  height: 60px;
+  font-size: 2rem;
+  text-align: center;
+  border: 3px solid rgb(151, 151, 151);
+  border-radius: 16px;
+}
+
+input:focus {
+  border: 2px solid #7323a2;
+  background-color: rgb(165, 165, 165);
+}
+
+input::placeholder {
   font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
@@ -159,7 +235,7 @@ h3 {
   margin: 10px 0;
 }
 
-ul {
+.ul-list-names {
   width: 60%;
   list-style: none;
   margin: 0;
@@ -168,7 +244,7 @@ ul {
   border-right: 1px solid #7323a2;
 }
 
-li {
+.ul-list-names li {
   width: 100%;
   display: flex;
   align-items: center;
@@ -176,7 +252,7 @@ li {
   margin: 20px 0;
 }
 
-li span {
+.ul-list-names li span {
   font-size: 1.2rem;
   font-weight: bold;
 }

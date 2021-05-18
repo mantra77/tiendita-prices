@@ -19,8 +19,23 @@
   <body>
     <header>
       <div class="web-title">
-        <span class="material-icons"> shopping_cart </span>
-        <h1>Tiendita Price</h1>
+        <div style="display: flex; align-items: center; margin-left: 20px">
+          <span class="material-icons"> shopping_cart </span>
+          <h1>Tiendita Price</h1>
+        </div>
+        <button id="open-menu-btn" class="menu-btns">
+          <span class="material-icons" style="font-size: 2.75rem"> menu </span>
+        </button>
+        <div class="menu" id="menu-section">
+          <button id="close-menu-btn" class="menu-btns">
+            <span class="material-icons" style="font-size: 2.75rem"> cancel </span>
+          </button>
+          <ul class="ul-list-options">
+            <li>
+              <a class="menu-option" href="/calc2.html">Calcular precios de Factura</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -60,7 +75,7 @@
         </div>
         <div class="main-prices-container">
           <div style="display: flex">
-            <ul>
+            <ul class="ul-list-names">
               <li>
                 <span class="article-name">Aceite de Soya</span>
                 <span>2.1$</span>
