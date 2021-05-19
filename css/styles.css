@@ -107,7 +107,7 @@ input[type='number'] {
   position: absolute;
   top: 0%;
   left: 100vw;
-  transition-property: none, left, visibility;
+  transition-property: left, visibility;
   transition-duration: 0.5s;
 }
 
@@ -353,6 +353,7 @@ li span {
 #section-14,
 #section-15,
 #section-16 {
+  overflow: hidden;
   border-top: 1px solid #000;
   transition-property: height;
   transition-duration: 0.5s;
