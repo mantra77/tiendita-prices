@@ -21,7 +21,15 @@
       </section>
       <section>
         <div>
-          <input type="text" data-type="currency" name="Price" id="price" placeholder="Precio total Bs" />
+          <input
+            type="text"
+            pattern="[0-9]*"
+            inputmode="numeric"
+            data-type="currency"
+            name="Price"
+            id="price"
+            placeholder="Precio total Bs"
+          />
           /
           <input type="number" name="Quantity of the product" id="quantity" placeholder="Cantidad de prodcutos" />
         </div>
@@ -30,7 +38,15 @@
           %
         </div>
         <div>
-          <input type="text" data-type="currency" name="Exchange rate" id="exchange" placeholder="Tasa del dia $" />
+          <input
+            type="text"
+            pattern="[0-9]*"
+            inputmode="numeric"
+            data-type="currency"
+            name="Exchange rate"
+            id="exchange"
+            placeholder="Tasa del dia $"
+          />
           $
         </div>
         <div>
