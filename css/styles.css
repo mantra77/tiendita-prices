@@ -52,13 +52,14 @@ input[type='number'] {
 }
 
 .menu {
+  visibility: hidden;
   width: 55vw;
   height: 70vh;
   background-color: #7323a2;
   position: absolute;
   top: 0%;
   left: 100vw;
-  transition-property: left;
+  transition-property: left, visibility;
   transition-duration: 0.5s;
 }
 

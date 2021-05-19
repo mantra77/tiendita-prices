@@ -93,9 +93,11 @@ const reset = () => {
 
 const openMenu = () => {
   menuSection.style.left = '45vw';
+  menuSection.style.visibility = 'visible';
 };
 const closeMenu = () => {
   menuSection.style.left = '100vw';
+  menuSection.style.visibility = 'hidden';
 };
 
 //Calculation click functions
