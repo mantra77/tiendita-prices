@@ -17,25 +17,25 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header style="position: relative">
+      <div class="menu" id="menu-section">
+        <button id="close-menu-btn" class="menu-btns">
+          <span class="material-icons" style="font-size: 2.75rem"> cancel </span>
+        </button>
+        <ul class="ul-list-options">
+          <li>
+            <a class="menu-option" href="/calc2.html">Calcular precios de Factura</a>
+          </li>
+        </ul>
+      </div>
       <div class="web-title">
-        <div style="display: flex; align-items: center; margin-left: 20px">
+        <div style="display: flex; flex: 1; align-items: center; margin-left: 20px">
           <span class="material-icons"> shopping_cart </span>
           <h1>Tiendita Price</h1>
         </div>
         <button id="open-menu-btn" class="menu-btns">
           <span class="material-icons" style="font-size: 2.75rem"> menu </span>
         </button>
-        <div class="menu" id="menu-section">
-          <button id="close-menu-btn" class="menu-btns">
-            <span class="material-icons" style="font-size: 2.75rem"> cancel </span>
-          </button>
-          <ul class="ul-list-options">
-            <li>
-              <a class="menu-option" href="/calc2.html">Calcular precios de Factura</a>
-            </li>
-          </ul>
-        </div>
       </div>
     </header>
     <main>
@@ -74,231 +74,460 @@
           </div>
         </div>
         <div class="main-prices-container">
+          <!-- Aceites & Vinagres -->
           <div style="display: flex">
-            <ul class="ul-list-names">
-              <li>
-                <span class="article-name">Aceite de Soya</span>
-                <span>2.1$</span>
-              </li>
-              <li>
-                <span class="article-name">Arroz Emi</span>
-                <span>1$</span>
-              </li>
-              <li>
-                <span class="article-name">Arroz Palacio</span>
-                <span>1.1$</span>
-              </li>
-              <li>
-                <span class="article-name">Arroz Royal</span>
-                <span>1$</span>
-              </li>
-              <li>
-                <span class="article-name">Atun</span>
-                <span>1$</span>
-              </li>
-              <li>
-                <span class="article-name">Azucar Uniao</span>
-                <span>0.8$</span>
-              </li>
-              <li>
-                <span class="article-name">Azucar Montalban</span>
-                <span>0.8$</span>
-              </li>
-              <li>
-                <span span class="article-name">Bombillos</span>
-                <span>0.5$</span>
-              </li>
-              <li>
-                <span span class="article-name">Cafe Madrid 250gr</span>
-                <span>1.5$</span>
-              </li>
-              <li>
-                <span span class="article-name">Cafe Madrid 500gr</span>
-                <span>2.7$</span>
-              </li>
-              <li>
-                <span span class="article-name">Carton de huevos</span>
-                <span>3.5$</span>
-              </li>
-              <li>
-                <span span class="article-name">Chimo</span>
-                <span>0.4$</span>
-              </li>
-              <li>
-                <span span class="article-name">Condimentos</span>
-                <span>0.4$</span>
-              </li>
-              <li>
-                <span span class="article-name">Crema dental Alident</span>
-                <span>0.7$</span>
-              </li>
-              <li>
-                <span span class="article-name">Crema dental Colgate</span>
-                <span>0.8$</span>
-              </li>
-              <li>
-                <span span class="article-name">Desodorante</span>
-                <span>0.5$</span>
-              </li>
-              <li>
-                <span span class="article-name">Fructus</span>
-                <span>0.3$</span>
-              </li>
-              <li>
-                <span span class="article-name">Harina Dona Belen</span>
-                <span>1.1$</span>
-              </li>
-              <li>
-                <span span class="article-name">Harina Dona Gema</span>
-                <span>1$</span>
-              </li>
-              <li>
-                <span span class="article-name">Harina Levudante</span>
-                <span>1.3$</span>
-              </li>
-              <li>
-                <span span class="article-name">Harina pan</span>
-                <span>1.3$</span>
-              </li>
-              <li>
-                <span span class="article-name">Hojillas Schick (Paquete)</span>
-                <span>0.3$</span>
-              </li>
-              <li>
-                <span span class="article-name">Hojillas Schick c/u</span>
-                <span>0.1$</span>
-              </li>
-              <li>
-                <span span class="article-name">Jabon Azul</span>
-                <span>0.6$</span>
-              </li>
-              <li>
-                <span span class="article-name">Jabon de Olor</span>
-                <span>0.5$</span>
-              </li>
-              <li>
-                <span span class="article-name">Konga</span>
-                <span>0.5$</span>
-              </li>
-              <li>
-                <span span class="article-name">Leche DoBon</span>
-                <span>1.3$</span>
-              </li>
-              <li>
-                <span span class="article-name">Mantequilla Adorita</span>
-                <span>0.7$</span>
-              </li>
-              <li>
-                <span span class="article-name">Mantequilla Estancia 500gr</span>
-                <span>1.2$</span>
-              </li>
-              <li>
-                <span span class="article-name">Mayonesa 445gr</span>
-                <span>1.7$</span>
-              </li>
-              <li>
-                <span span class="article-name">Mayonesa Mavesa</span>
-                <span>1.3$</span>
-              </li>
-              <li>
-                <span span class="article-name">Mortadela</span>
-                <span>2$</span>
-              </li>
-              <li>
-                <span span class="article-name">Papel Higienico Rosal</span>
-                <span>1$</span>
-              </li>
-              <li>
-                <span span class="article-name">Papel Higienico Rosal c/u</span>
-                <span>0.3$</span>
-              </li>
-              <li>
-                <span span class="article-name">Pasta 1kg Larga y Corta</span>
-                <span>1.3$</span>
-              </li>
-              <li>
-                <span class="article-name">Pasta 500gr Larga y Corta</span>
-                <span>0.7$</span>
-              </li>
-              <li>
-                <span span class="article-name">Pasta Venecia</span>
-                <span>1.2$</span>
-              </li>
-              <li>
-                <span span class="article-name">Pega loca</span>
-                <span>0.5$</span>
-              </li>
-              <li>
-                <span span class="article-name">Pilas c/u</span>
-                <span>0.4$</span>
-              </li>
-              <li>
-                <span span class="article-name">Pilas paquete</span>
-                <span>0.9$</span>
-              </li>
-              <li>
-                <span span class="article-name">Queso Kg</span>
-                <span>2.7$</span>
-              </li>
-              <li>
-                <span span class="article-name">Sal</span>
-                <span>0.3$</span>
-              </li>
-              <li>
-                <span span class="article-name">Salchichas Kg</span>
-                <span>1.7$</span>
-              </li>
-              <li>
-                <span span class="article-name">Salsa de ajo</span>
-                <span>0.9$</span>
-              </li>
-              <li>
-                <span span class="article-name">Salsa de Pasta</span>
-                <span>0.8$</span>
-              </li>
-              <li>
-                <span span class="article-name">Salsa de tomate</span>
-                <span>1$</span>
-              </li>
-              <li>
-                <span span class="article-name">Salsa Inglesa</span>
-                <span>0.9$</span>
-              </li>
-              <li>
-                <span span class="article-name">Salsa Soya</span>
-                <span>0.9$</span>
-              </li>
-              <li>
-                <span span class="article-name">Sardinas</span>
-                <span>0.9$</span>
-              </li>
-              <li>
-                <span span class="article-name">Shampoo</span>
-                <span>0.4$</span>
-              </li>
-              <li>
-                <span span class="article-name">Sopa Maggi</span>
-                <span>1$</span>
-              </li>
-              <li>
-                <span span class="article-name">Tabaco</span>
-                <span>0.3$</span>
-              </li>
-              <li>
-                <span span class="article-name">Velas</span>
-                <span>0.3$</span>
-              </li>
-              <li>
-                <span span class="article-name">Vinagre</span>
-                <span>0.9$</span>
-              </li>
-              <li>
-                <span span class="article-name">Yesquero</span>
-                <span>0.5$</span>
-              </li>
-            </ul>
-            <div id="price-ves-container">
-              <div id="price-ves"></div>
+            <div style="width: 100%; height: 85px" id="section-1" onclick="openSection1()">
+              <div class="item-section-name">
+                <p>Aceites & Vinagres</p>
+                <span class="material-icons"> expand_more </span>
+              </div>
+              <div class="article-name-box">
+                <div class="article-name-price-container">
+                  <span class="article-name">Aceite de Soya</span>
+                  <span class="article-price1">2.1$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Vinagre:</span>
+                  <span class="article-price1">0.9$</span>
+                </div>
+              </div>
+              <div class="price-ves" id="price-ves1"></div>
+            </div>
+          </div>
+          <!-- Arroces -->
+          <div style="display: flex">
+            <div style="width: 100%; height: 85px" id="section-2" onclick="openSection2()">
+              <div class="item-section-name">
+                <p>Arroces</p>
+                <span class="material-icons"> expand_more </span>
+              </div>
+              <div class="article-name-box more-space">
+                <div class="article-name-price-container">
+                  <span class="article-name">Arro Emi</span>
+                  <span class="article-price1">1$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Arroz Palacio</span>
+                  <span class="article-price1">1.1$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Arroz Royal</span>
+                  <span class="article-price1">1$</span>
+                </div>
+              </div>
+              <div class="price-ves more-space-2" id="price-ves2"></div>
+            </div>
+          </div>
+          <!-- Aseo Personal -->
+          <div style="display: flex">
+            <div style="width: 100%; height: 85px" id="section-3" onclick="openSection3()">
+              <div class="item-section-name">
+                <p>Aseo Personal</p>
+                <span class="material-icons"> expand_more </span>
+              </div>
+              <div class="article-name-box" style="height: 495px">
+                <div class="article-name-price-container">
+                  <span class="article-name">Crema dental Alident</span>
+                  <span class="article-price1">0.7$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Crema dental Colgate</span>
+                  <span class="article-price1">0.8$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Desodorante</span>
+                  <span class="article-price1">0.5$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Hojillas Schick</span>
+                  <span class="article-price1">0.3$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Hojillas Schick C/U</span>
+                  <span class="article-price1">0.1$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Jabon Azul</span>
+                  <span class="article-price1">0.6$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Jabon de Olor</span>
+                  <span class="article-price1">0.5$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Papel Rosal Paquete</span>
+                  <span class="article-price1">1$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Papel Rosal C/U</span>
+                  <span class="article-price1">0.3$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Shampoo</span>
+                  <span class="article-price1">0.4$</span>
+                </div>
+              </div>
+              <div class="price-ves more-space-9" id="price-ves3"></div>
+            </div>
+          </div>
+          <!-- Azucares -->
+          <div style="display: flex">
+            <div style="width: 100%; height: 85px" id="section-4" onclick="openSection4()">
+              <div class="item-section-name">
+                <p>Azucares</p>
+                <span class="material-icons"> expand_more </span>
+              </div>
+              <div class="article-name-box" style="height: 200px">
+                <div class="article-name-price-container">
+                  <span class="article-name">Azucar Uniao</span>
+                  <span class="article-price1">0.8$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Azcuar Montalban</span>
+                  <span class="article-price1">0.8$</span>
+                </div>
+              </div>
+              <div class="price-ves more-space-4" id="price-ves4"></div>
+            </div>
+          </div>
+          <!-- Condimentos -->
+          <div style="display: flex">
+            <div style="width: 100%; height: 85px" id="section-5" onclick="openSection5()">
+              <div class="item-section-name">
+                <p>Condimentos</p>
+                <span class="material-icons"> expand_more </span>
+              </div>
+              <div class="article-name-box" style="height: 200px">
+                <div class="article-name-price-container">
+                  <span class="article-name">Condimentos</span>
+                  <span class="article-price1">0.4$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Sal</span>
+                  <span class="article-price1">0.3$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Sopa Maggi</span>
+                  <span class="article-price1">1$</span>
+                </div>
+              </div>
+              <div class="price-ves more-space-4" id="price-ves5"></div>
+            </div>
+          </div>
+          <!-- Cafes -->
+          <div style="display: flex">
+            <div style="width: 100%; height: 85px" id="section-6" onclick="openSection6()">
+              <div class="item-section-name">
+                <p>Cafes</p>
+                <span class="material-icons"> expand_more </span>
+              </div>
+              <div class="article-name-box" style="height: 200px">
+                <div class="article-name-price-container">
+                  <span class="article-name">Cafe Madrid 250g</span>
+                  <span class="article-price1">1.5$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Cafe Madrid 500g</span>
+                  <span class="article-price1">2.7$</span>
+                </div>
+              </div>
+              <div class="price-ves more-space-4" id="price-ves6"></div>
+            </div>
+          </div>
+          <!-- Charcuteria -->
+          <div style="display: flex">
+            <div style="width: 100%; height: 85px" id="section-7" onclick="openSection7()">
+              <div class="item-section-name">
+                <p>Charcuteria</p>
+                <span class="material-icons"> expand_more </span>
+              </div>
+              <div class="article-name-box" style="height: 200px">
+                <div class="article-name-price-container">
+                  <span class="article-name">Mortadela</span>
+                  <span class="article-price1">2$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Queso Kg</span>
+                  <span class="article-price1">2.7$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Salchichas</span>
+                  <span class="article-price1">1.7$</span>
+                </div>
+              </div>
+              <div class="price-ves more-space-4" id="price-ves7"></div>
+            </div>
+          </div>
+          <!-- Dulces -->
+          <div style="display: flex">
+            <div style="width: 100%; height: 85px" id="section-8" onclick="openSection8()">
+              <div class="item-section-name">
+                <p>Dulces</p>
+                <span class="material-icons"> expand_more </span>
+              </div>
+              <div class="article-name-box" style="height: 315px">
+                <div class="article-name-price-container">
+                  <span class="article-name">BoliBulls</span>
+                  <span class="article-price1">0.2$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Bombonito</span>
+                  <span class="article-price1">0.4$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Cheestris</span>
+                  <span class="article-price1">0.5$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Chocolate Wafer</span>
+                  <span class="article-price1">0.6$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Galleta Maria</span>
+                  <span class="article-price1">0.2$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Galleta Rex</span>
+                  <span class="article-price1">0.6$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Nucita</span>
+                  <span class="article-price1">0.3$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Toston</span>
+                  <span class="article-price1">0.3$</span>
+                </div>
+              </div>
+              <div class="price-ves more-space-5" id="price-ves8"></div>
+            </div>
+          </div>
+          <!-- Harinas -->
+          <div style="display: flex">
+            <div style="width: 100%; height: 85px" id="section-9" onclick="openSection9()">
+              <div class="item-section-name">
+                <p>Harinas</p>
+                <span class="material-icons"> expand_more </span>
+              </div>
+              <div class="article-name-box" style="height: 200px">
+                <div class="article-name-price-container">
+                  <span class="article-name">Harina Dona Bele</span>
+                  <span class="article-price1">1.1$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Harina Dona Gema</span>
+                  <span class="article-price1">1$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Harina Levudante</span>
+                  <span class="article-price1">1.3$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Harina PAN</span>
+                  <span class="article-price1">1.3$</span>
+                </div>
+              </div>
+              <div class="price-ves more-space-4" id="price-ves9"></div>
+            </div>
+          </div>
+          <!-- Huevos -->
+          <div style="display: flex">
+            <div style="width: 100%; height: 85px" id="section-10" onclick="openSection10()">
+              <div class="item-section-name">
+                <p>Huevos</p>
+                <span class="material-icons"> expand_more </span>
+              </div>
+              <div class="article-name-box" style="height: 170px">
+                <div class="article-name-price-container">
+                  <span class="article-name">Carton de Huevo</span>
+                  <span class="article-price1">3.5$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">1/2 Carton de Huevo</span>
+                  <span class="article-price1">1.75$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Huevo Unidad</span>
+                  <span class="article-price1">0.5$</span>
+                </div>
+              </div>
+              <div class="price-ves more-space-6" id="price-ves10"></div>
+            </div>
+          </div>
+          <!-- Jugos -->
+          <div style="display: flex">
+            <div style="width: 100%; height: 85px" id="section-11" onclick="openSection11()">
+              <div class="item-section-name">
+                <p>Jugos</p>
+                <span class="material-icons"> expand_more </span>
+              </div>
+              <div class="article-name-box" style="height: 135px">
+                <div class="article-name-price-container">
+                  <span class="article-name">Frcutus</span>
+                  <span class="article-price1">0.3$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Konga</span>
+                  <span class="article-price1">0.5$</span>
+                </div>
+              </div>
+              <div class="price-ves more-space-7" id="price-ves11"></div>
+            </div>
+          </div>
+          <!-- Lacteos -->
+          <div style="display: flex">
+            <div style="width: 100%; height: 85px" id="section-12" onclick="openSection12()">
+              <div class="item-section-name">
+                <p>Lacteos</p>
+                <span class="material-icons"> expand_more </span>
+              </div>
+              <div class="article-name-box" style="height: 100px">
+                <div class="article-name-price-container">
+                  <span class="article-name">Leche DoBon</span>
+                  <span class="article-price1">1.3$</span>
+                </div>
+              </div>
+              <div class="price-ves" id="price-ves12"></div>
+            </div>
+          </div>
+          <!-- Pastas -->
+          <div style="display: flex">
+            <div style="width: 100%; height: 85px" id="section-13" onclick="openSection13()">
+              <div class="item-section-name">
+                <p>Pastas</p>
+                <span class="material-icons"> expand_more </span>
+              </div>
+              <div class="article-name-box" style="height: 200px">
+                <div class="article-name-price-container">
+                  <span class="article-name">Pasta 1Kg Larga y Corta</span>
+                  <span class="article-price1">1.3$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Pasta 500g Larga y Corta</span>
+                  <span class="article-price1">0.7$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Pasta Venecia</span>
+                  <span class="article-price1">1.2$</span>
+                </div>
+              </div>
+              <div class="price-ves more-space-4" id="price-ves13"></div>
+            </div>
+          </div>
+          <!-- Pescaderia -->
+          <div style="display: flex">
+            <div style="width: 100%; height: 85px" id="section-14" onclick="openSection14()">
+              <div class="item-section-name">
+                <p>Pescaderia</p>
+                <span class="material-icons"> expand_more </span>
+              </div>
+              <div class="article-name-box" style="height: 140px">
+                <div class="article-name-price-container">
+                  <span class="article-name">Atun</span>
+                  <span class="article-price1">1$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Sardinas</span>
+                  <span class="article-price1">0.9$</span>
+                </div>
+              </div>
+              <div class="price-ves more-space-7" id="price-ves14"></div>
+            </div>
+          </div>
+          <!-- Salsas -->
+          <div style="display: flex">
+            <div style="width: 100%; height: 85px" id="section-15" onclick="openSection15()">
+              <div class="item-section-name">
+                <p>Salsas</p>
+                <span class="material-icons"> expand_more </span>
+              </div>
+              <div class="article-name-box" style="height: 415px">
+                <div class="article-name-price-container">
+                  <span class="article-name">Mantequilla Adorita</span>
+                  <span class="article-price1">0.7$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Mantequilla Estancia</span>
+                  <span class="article-price1">1.35$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Mayonesa Arias</span>
+                  <span class="article-price1">1.95$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Mayonesa Mavesa</span>
+                  <span class="article-price1">1.3$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Salsa de Ajo</span>
+                  <span class="article-price1">0.9$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Salsa de Pasta</span>
+                  <span class="article-price1">0.8$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Salsa Pampero 198g</span>
+                  <span class="article-price1">0.7$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Salsa Tomatico</span>
+                  <span class="article-price1">1$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Salsa Inglesa</span>
+                  <span class="article-price1">0.9$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Salsa de Soya</span>
+                  <span class="article-price1">0.9$</span>
+                </div>
+              </div>
+              <div class="price-ves more-space-3" id="price-ves15"></div>
+            </div>
+          </div>
+          <!-- Variados -->
+          <div style="display: flex">
+            <div style="width: 100%; height: 85px" id="section-16" onclick="openSection16()">
+              <div class="item-section-name">
+                <p>Variados</p>
+                <span class="material-icons"> expand_more </span>
+              </div>
+              <div class="article-name-box" style="height: 370px">
+                <div class="article-name-price-container">
+                  <span class="article-name">Bombillos</span>
+                  <span class="article-price1">0.5$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Chimo</span>
+                  <span class="article-price1">0.4$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Pega Loca</span>
+                  <span class="article-price1">0.5$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Pilas C/U</span>
+                  <span class="article-price1">0.4$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Pilas Paquete</span>
+                  <span class="article-price1">0.9$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Tabaco</span>
+                  <span class="article-price1">0.3$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Velas</span>
+                  <span class="article-price1">0.3$</span>
+                </div>
+                <div class="article-name-price-container">
+                  <span class="article-name">Yesquero</span>
+                  <span class="article-price1">0.5$</span>
+                </div>
+              </div>
+              <div class="price-ves more-space-8" id="price-ves16"></div>
             </div>
           </div>
         </div>
@@ -308,5 +537,7 @@
       <small>&copy; Copyright 2021, Luis Arias</small>
     </footer>
   </body>
-  <script src="/js/script.js"></script>
+  <script type="text/javascript" src="/js/script2.js"></script>
+  <script type="text/javascript" src="/js/prices.js"></script>
+  <script type="text/javascript" src="/js/script.js"></script>
 </html>
